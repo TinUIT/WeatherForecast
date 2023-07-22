@@ -1,13 +1,23 @@
 package com.trongtin.weatherapi.common;
 
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
-import jakarta.persistence.*;
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.OneToOne;
+import jakarta.persistence.PrimaryKeyJoinColumn;
+import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "locations")
 public class Location {
+
     @Column(length = 12, nullable = false, unique = true)
     @Id
     private String code;
@@ -32,6 +42,12 @@ public class Location {
     @PrimaryKeyJoinColumn
     private RealtimeWeather realtimeWeather;
 
+    @OneToMany(mappedBy = "id.location", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<HourlyWeather> listHourlyWeather = new ArrayList<>();
+
+//    @OneToMany(mappedBy = "id.location", cascade = CascadeType.ALL, orphanRemoval = true)
+//    private List<DailyWeather> listDailyWeather = new ArrayList<>();
+
     public Location() {
 
     }
@@ -42,14 +58,6 @@ public class Location {
         this.regionName = regionName;
         this.countryName = countryName;
         this.countryCode = countryCode;
-    }
-
-    public RealtimeWeather getRealtimeWeather() {
-        return realtimeWeather;
-    }
-
-    public void setRealtimeWeather(RealtimeWeather realtimeWeather) {
-        this.realtimeWeather = realtimeWeather;
     }
 
     public String getCode() {
@@ -130,8 +138,34 @@ public class Location {
         return cityName + ", " + (regionName != null ? regionName + ", " : "") + countryName;
     }
 
+    public RealtimeWeather getRealtimeWeather() {
+        return realtimeWeather;
+    }
+
+    public void setRealtimeWeather(RealtimeWeather realtimeWeather) {
+        this.realtimeWeather = realtimeWeather;
+    }
+
+    public List<HourlyWeather> getListHourlyWeather() {
+        return listHourlyWeather;
+    }
+
+    public void setListHourlyWeather(List<HourlyWeather> listHourlyWeather) {
+        this.listHourlyWeather = listHourlyWeather;
+    }
+
     public Location code(String code) {
         setCode(code);
         return this;
     }
+
+//    public List<DailyWeather> getListDailyWeather() {
+//        return listDailyWeather;
+//    }
+//
+//    public void setListDailyWeather(List<DailyWeather> listDailyWeather) {
+//        this.listDailyWeather = listDailyWeather;
+//    }
+
+
 }
