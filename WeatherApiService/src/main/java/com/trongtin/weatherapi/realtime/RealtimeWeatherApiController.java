@@ -22,8 +22,6 @@ import jakarta.validation.Valid;
 @RestController
 @RequestMapping("/v1/realtime")
 public class RealtimeWeatherApiController {
-    private static final Logger LOGGER = LoggerFactory.getLogger(RealtimeWeatherApiController.class);
-
     private GeolocationService locationService;
     private RealtimeWeatherService realtimeWeatherService;
     private ModelMapper modelMapper;
@@ -57,17 +55,22 @@ public class RealtimeWeatherApiController {
 
     @PutMapping("/{locationCode}")
     public ResponseEntity<?> updateRealtimeWeather(@PathVariable("locationCode") String locationCode,
-                                                   @RequestBody @Valid RealtimeWeather realtimeWeatherInRequest) {
+                                                   @RequestBody @Valid RealtimeWeatherDTO dto) {
 
-        realtimeWeatherInRequest.setLocationCode(locationCode);
+        RealtimeWeather realtimeWeather = dto2Entity(dto);
+        realtimeWeather.setLocationCode(locationCode);
 
-        RealtimeWeather updatedRealtimeWeather = realtimeWeatherService.update(locationCode, realtimeWeatherInRequest);
+        RealtimeWeather updatedRealtimeWeather = realtimeWeatherService.update(locationCode, realtimeWeather);
 
         return ResponseEntity.ok(entity2DTO(updatedRealtimeWeather));
     }
 
     private RealtimeWeatherDTO entity2DTO(RealtimeWeather realtimeWeather) {
         return modelMapper.map(realtimeWeather, RealtimeWeatherDTO.class);
+    }
+
+    private RealtimeWeather dto2Entity(RealtimeWeatherDTO dto) {
+        return modelMapper.map(dto, RealtimeWeather.class);
     }
 
 }

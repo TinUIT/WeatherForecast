@@ -10,13 +10,9 @@
         <module name="WeatherApiService" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="WeatherApiCommon" target="17" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="WeatherApiCommon" options="-parameters" />
       <module name="WeatherApiService" options="-parameters" />
       <module name="weather-api-common" options="-parameters" />
     </option>
