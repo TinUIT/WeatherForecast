@@ -171,7 +171,10 @@ public class LocationApiControllerTests {
 
     @Test
     public void testGetShouldReturn405MethodNotAllowed() throws Exception {
-        String requestURI = END_POINT_PATH + "/ABCDEF";
+        String locationCode = "ABCDEF";
+        String requestURI = END_POINT_PATH + "/"+ locationCode;
+
+        Mockito.when(service.get(locationCode)).thenThrow(LocationNotFoundException.class);
 
         mockMvc.perform(post(requestURI))
                 .andExpect(status().isMethodNotAllowed())
