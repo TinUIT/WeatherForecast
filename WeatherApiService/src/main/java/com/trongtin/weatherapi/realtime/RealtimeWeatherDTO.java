@@ -2,6 +2,7 @@ package com.trongtin.weatherapi.realtime;
 
 import java.util.Date;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.Range;
 
@@ -14,6 +15,7 @@ import jakarta.validation.constraints.NotBlank;
 @JsonPropertyOrder({"location", "temperature", "humidity", "precipitation", "wind_speed", "status", "last_updated"})
 public class RealtimeWeatherDTO {
 
+    @JsonInclude(JsonInclude.Include.NON_NULL)
     private String location;
 
     @Range(min = -50, max = 50, message = "Temperature must be in the range of -50 to 50 Celsius degree")
@@ -94,4 +96,5 @@ public class RealtimeWeatherDTO {
     }
 
 }
+
 
