@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7d276f97-8d9a-4a6d-99c4-192588fb89d4" name="Changes" comment=" Update Realtime Weather API">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="e46c6cad-00f2-42e2-a44c-2d927e74f429" />
+        <option name="url" value="https://github.com/TinUIT/WeatherForecast.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Ss7gWilUWYAhvaE6gQrIWTJb91" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/WeatherApi/WeatherApiProject",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "spring.configuration.checksum": "4df278ec464a2f0dfce8e1956d22cd29",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\WeatherApi\WeatherApiProject\WeatherApiService\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.RealtimeWeatherRepositoryTests">
+    <configuration name="DailyWeatherApiControllerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WeatherApiService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.trongtin.weatherapi.daily.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.trongtin.weatherapi.daily" />
+      <option name="MAIN_CLASS_NAME" value="com.trongtin.weatherapi.daily.DailyWeatherApiControllerTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HourlyWeatherRepositoryTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WeatherApiService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.trongtin.weatherapi.hourly.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.trongtin.weatherapi.hourly" />
+      <option name="MAIN_CLASS_NAME" value="com.trongtin.weatherapi.hourly.HourlyWeatherRepositoryTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LocationApiControllerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WeatherApiService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.trongtin.weatherapi.location.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.trongtin.weatherapi.location" />
+      <option name="MAIN_CLASS_NAME" value="com.trongtin.weatherapi.location.LocationApiControllerTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LocationRepositoryTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WeatherApiService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.trongtin.weatherapi.location.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.trongtin.weatherapi.location" />
+      <option name="MAIN_CLASS_NAME" value="com.trongtin.weatherapi.location.LocationRepositoryTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RealtimeWeatherRepositoryTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WeatherApiService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.trongtin.weatherapi.realtime.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.trongtin.weatherapi.realtime" />
+      <option name="MAIN_CLASS_NAME" value="com.trongtin.weatherapi.realtime.RealtimeWeatherRepositoryTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WeatherApiServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="WeatherApiService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.trongtin.weatherapi.WeatherApiServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.RealtimeWeatherRepositoryTests" />
+        <item itemvalue="JUnit.HourlyWeatherRepositoryTests" />
+        <item itemvalue="JUnit.LocationApiControllerTests" />
+        <item itemvalue="JUnit.LocationRepositoryTests" />
+        <item itemvalue="JUnit.DailyWeatherApiControllerTests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7d276f97-8d9a-4a6d-99c4-192588fb89d4" name="Changes" comment="" />
+      <created>1689923550331</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1689923550331</updated>
+      <workItem from="1689923551329" duration="2607000" />
+      <workItem from="1689926326061" duration="9186000" />
+      <workItem from="1689949944024" duration="11257000" />
+      <workItem from="1690029686392" duration="7080000" />
+      <workItem from="1690095403422" duration="536000" />
+      <workItem from="1690095971810" duration="1730000" />
+      <workItem from="1690272931144" duration="621000" />
+      <workItem from="1690273599652" duration="2674000" />
+      <workItem from="1690469023176" duration="2270000" />
+      <workItem from="1690648788361" duration="158000" />
+      <workItem from="1690811113157" duration="178000" />
+      <workItem from="1692000494301" duration="860000" />
+      <workItem from="1692184626854" duration="1986000" />
+    </task>
+    <task id="LOCAL-00001" summary="Implements Hourly Forecast APIs">
+      <option name="closed" value="true" />
+      <created>1690038457945</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1690038457945</updated>
+    </task>
+    <task id="LOCAL-00002" summary=" Update Realtime Weather API">
+      <option name="closed" value="true" />
+      <created>1690469439468</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1690469439468</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Implements Hourly Forecast APIs" />
+    <MESSAGE value=" Update Realtime Weather API" />
+    <option name="LAST_COMMIT_MESSAGE" value=" Update Realtime Weather API" />
+  </component>
+</project>
